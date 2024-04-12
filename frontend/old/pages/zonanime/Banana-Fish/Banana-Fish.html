@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <script src="../../../butons-animes.js"></script>
+        <link rel="stylesheet" href="../../../butons-anime.css">
+        <link rel="stylesheet" href="../../../ui-ux-pages.css">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GTPananime.ZAnime</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../../normalize.css">
+        <link rel="stylesheet" href="anime.css">
+        <link rel="stylesheet" href="../../../loader.css">
+        <link rel="icon" href="../../../assets/logohead3.png" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/bfd803e50b.js" crossorigin="anonymous"></script>
+        <script src="../../../code.jquery.com_jquery-3.7.1.js"></script>
+        <script src="anime.js"></script>
+        <script src="../../../ui-ux-pages.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+        <script src="../../../loader.js"></script>
+
+    </head>
+    <body id="body" onload="Entry()">
+        
+        <header>
+            <div class="headers">
+                <nav class="header__nav">
+                <a href="../../../index.html"><img src="../../../assets/logo_copy_V2.0.png" class="logo-anime" alt="logo"></a> 
+                <ul class="header__nav-ul">
+                  <li class="header__nav-li"><a href="../../../index.html"><i class="fass fa-brands fa-algolia fa-bounce"></i>Animes</a></li>
+                  <li class="header__nav-li"><a href="../../Foros/foros.html"><i class="fass fa-brands fa-stack-overflow fa-beat"></i>Foros</a></li>
+                  <li class="header__nav-li"><a href="../../Mangas/manga.html"><i class="fass fa-solid fa-photo-film fa-bounce"></i>Mangas</a></li>
+                  <li class="header__nav-li"><a href="https://discord.gg/rnkZM5xbsW" target="_blank"><i class="fass fa-brands fa-discord fa-beat"></i>Discord</a></li>
+                  <li class="header__nav-li"><a href="../../loginGTP/users.html"><i class="fass fa-solid fa-users fa-bounce"></i>Registro</a></li>
+                </ul>
+                </nav>
+                
+            </div>
+
+            <div class="header2">
+                <nav class="header__nav2">
+                <a href="../../../index.html"><img src="../../../assets/logo_copy_V2.0.png" class="logo-anime" alt="logo"></a>
+                
+                <ul class="header__nav-ul2" id="deslizar">
+                  <li class="header__nav-li2"><a href="../../../index.html"><i class="fass fa-brands fa-algolia"></i>Animes</a></li>
+                  <li class="header__nav-li2"><a href="../../Foros/foros.html"><i class="fass fa-brands fa-stack-overflow"></i>Foros</a></li>
+                  <li class="header__nav-li2"><a href="../../Mangas/manga.html"><i class="fass fa-solid fa-photo-film "></i>Mangas</a></li>
+                  <li class="header__nav-li2"><a href="https://discord.gg/rnkZM5xbsW" target="_blank"><i class="fass fa-brands fa-discord "></i>Discord</a></li>
+                  <li class="header__nav-li2 registro"><a href="../../loginGTP/users.html"><i class="fass fa-solid fa-users"></i>Registro</a></li>
+                </ul>
+                <div class="button" onclick="hamburguesa()"><i class="fa-solid fa-bars" ></i></div>
+                </nav>
+                
+            </div>
+        </header>
+
+        <div class="loader">
+          <div class="containerv">
+           <div class="cubo">
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+           </div>
+           <div class="loading">
+               <h2 class="title-loader">=> GTPANANIME</h2>
+           </div>
+          </div> 
+          <div class="cursor"> </div>
+
+       </div>
+
+       <audio id="entrada">
+        <source src="assets.anime/akira.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+      </audio>
+ 
+        <main>
+
+            <section class="contenedor-anime">
+                <h2 class="contenedor-anime-h2"><a href="../../../index.html"><img src="assets.anime/tuzonanime2.png" alt="tuzonanime" 
+                    class="tuzonanime"  id="activeti"> <img src="assets.anime/tuzonanime2.png" alt="tuzonanime" 
+                    class="tuzonanime zonanime2" id="activetu"> </a> </h2>
+            </section>
+            <section class="main" id="principal">
+            <section class="contenedor1">
+                <section class="contenedor1__description">
+                    <h1 id="titulo_anime"> Banana Fish
+
+                      <div class="buton_night" onclick="background(), laterals(), main(), episodes(), anime(),buttonr(),buttons(), sun(), nigth(), capitulazo() ">
+                       <img src="../../../assets/botones/dia-.png" type="checkbox" id="miCheckbox"> 
+                       <div type="checkbox" class="img2" id="miCheckbox2"> </div>
+                      </div>
+                      </h1>
+
+                    <section class="contenedor1__description-section">
+                       <div class="contenedor1__description-block1">
+                         <p class="contenedor1__description-p">            
+                          Año 1973, Vietnam. Un soldado estadounidense pierde repentinamente la cordura tras musitar unas palabras: Banana Fish. Años después Ash Lynx, un joven de 17 años y líder de una 
+                          pandilla en Nueva York recibe un misterioso recipiente de un hombre moribundo, quien antes de morir pronuncia la frase "Banana Fish". Poco después de esto Eiji Okumura, un joven japonés 
+                          llega a Nueva York como asistente de Shunichi Ibe, un periodista que se encuentra haciendo un reportaje sobre las pandillas callejeras en la ciudad. Es así como Ash y Eiji se conocen,
+                           y tras una serie de acontecimientos y riñas con la mafia, deciden investigar sobre el trasfondo de "Banana Fish" y cómo es que se relaciona con el hermano de Ash, un veterano de guerra cuyas únicas 
+                           palabras desde que regresó han sido "Banana Fish".    				
+                        </p>
+
+                        <p class="contenedor1__description-p2">   
+                          "Banana Fish" es una serie de anime y manga ambientada en 1973. Ash Lynx, líder de una pandilla en Nueva York, y Eiji Okumura, un joven japonés, investigan un misterioso término, "Banana Fish",
+                           que está relacionado con el hermano de Ash, un veterano de guerra. Su búsqueda los lleva a desentrañar una peligrosa conspiración relacionada con la mafia y oscuros secretos de la guerra de Vietnam.
+                            La historia se centra en su amistad y lucha por descubrir la verdad en un mundo violento y corrupto.
+                        </p>
+
+                        <div class="contenedor1__description-datos">
+                            <div class="contenedor1__datos">
+                                <span class="autors">Estudio:</span>
+                                <span class="number">MAPPA</span>
+                            </div>
+                            <div class="contenedor1__datos">
+                                <span class="autors">Año:</span>
+                                <span class="number">2018 </span>
+                            </div>
+                            <div class="contenedor1__datos">
+                                <span class="autors">Genero:</span>
+                                <span class="number">Shōjo, Acción, Drama, Aventura.</span>
+                            </div>
+
+                        </div>
+
+                      </div>
+
+
+                      <div class="contenedor1__description-block2">
+                        <div class="contenedor1__description-facebook contenedor-facebook redes">
+                            <a href="https://www.facebook.com/profile.php?id=61552268458603" target="_blank">
+                              <img src="assets.anime/facebook2.png" alt="facebook" class="facebook"></a>
+                        </div>
+
+                        <div class="contenedor1__description-twitter  contenedor-twitter redes">
+                            <a href="https://twitter.com/GTPananime" target="_blank">
+                              <img src="assets.anime/twitter2.png" alt="twitter" class="twitter"></a>
+                        </div>
+
+                        <div class="contenedor1__description-instagram contenedor-instagram redes">
+                            <a href="https://www.instagram.com/gtpananime/" target="_blank">
+                              <img src="assets.anime/instagram2.png" alt="instagram" class="instagram"></a> 
+                        </div>
+
+
+                      </div>
+
+                    </section>  
+
+                </section>
+
+                <section class="contenedor1__episodes" id="episodes">
+                    <div class="contenedor1__episodes-text"   >
+                        <button class="contenedor1__episodes-h2"   onclick="flechas() , episodios(), footer(), lateralimg()" >
+                            EPISODES
+                             <img src="assets.anime/flecha.png" alt="flecha" id="flecha" class="imagen"></button>
+                    </div>
+                    <ul class="contenedor1__episodes-ul" id="capitulos">
+                        <li class="contenedor1__episodes-li  "  onclick="mostrarReproductor('capitulo1'),agregarHoverList(this)"> CAP 1 </li>
+                        <li class="contenedor1__episodes-li "  onclick="mostrarReproductor('capitulo2'),agregarHoverList(this)"> CAP 2 </li>
+                        <li class="contenedor1__episodes-li"  onclick="mostrarReproductor('capitulo3'),agregarHoverList(this)"> CAP 3 </li>
+                        <li class="contenedor1__episodes-li " onclick="mostrarReproductor('capitulo4'),agregarHoverList(this)"> CAP 4 </li>
+                        <li class="contenedor1__episodes-li"  onclick="mostrarReproductor('capitulo5'),agregarHoverList(this)"> CAP 5 </li>
+                        <li class="contenedor1__episodes-li"  onclick="mostrarReproductor('capitulo6'),agregarHoverList(this)"> CAP 6 </li>
+                        <li class="contenedor1__episodes-li" onclick="mostrarReproductor('capitulo7'),agregarHoverList(this)"> CAP 7 </li>
+                        <li class="contenedor1__episodes-li" onclick="mostrarReproductor('capitulo8'),agregarHoverList(this)"> CAP 8 </li>
+                        <li class="contenedor1__episodes-li "  onclick="mostrarReproductor('capitulo9'),agregarHoverList(this)"> CAP 9 </li>
+                        <li class="contenedor1__episodes-li "  onclick="mostrarReproductor('capitulo10'),agregarHoverList(this)"> CAP 10 </li>
+                        <li class="contenedor1__episodes-li "  onclick="mostrarReproductor('capitulo11'),agregarHoverList(this)"> CAP 11 </li>
+                        <li class="contenedor1__episodes-li "  onclick="mostrarReproductor('capitulo12'),agregarHoverList(this)"> CAP 12 </li>
+                        <li class="contenedor1__episodes-li "  onclick="mostrarReproductor('capitulo13'),agregarHoverList(this)"> CAP 13 </li>
+                        <li class="contenedor1__episodes-li "  onclick="mostrarReproductor('capitulo14'),agregarHoverList(this)"> CAP 14 </li>
+                        <li class="contenedor1__episodes-li "  onclick="mostrarReproductor('capitulo15'),agregarHoverList(this)"> CAP 15 </li>
+                        <li class="contenedor1__episodes-li "  onclick="mostrarReproductor('capitulo16'),agregarHoverList(this)"> CAP 16 </li>
+                        <li class="contenedor1__episodes-li "  onclick="mostrarReproductor('capitulo17'),agregarHoverList(this)"> CAP 17 </li>
+                        <li class="contenedor1__episodes-li "  onclick="mostrarReproductor('capitulo18'),agregarHoverList(this)"> CAP 18 </li>
+                        <li class="contenedor1__episodes-li "  onclick="mostrarReproductor('capitulo19'),agregarHoverList(this)"> CAP 19 </li>
+                        <li class="contenedor1__episodes-li "  onclick="mostrarReproductor('capitulo20'),agregarHoverList(this)"> CAP 20 </li>
+                        <li class="contenedor1__episodes-li "  onclick="mostrarReproductor('capitulo21'),agregarHoverList(this)"> CAP 21 </li>
+                        <li class="contenedor1__episodes-li "  onclick="mostrarReproductor('capitulo22'),agregarHoverList(this)"> CAP 22 </li>
+                        <li class="contenedor1__episodes-li "  onclick="mostrarReproductor('capitulo23'),agregarHoverList(this)"> CAP 23 </li>
+                        <li class="contenedor1__episodes-li "  onclick="mostrarReproductor('capitulo24'),agregarHoverList(this)"> CAP 24 </li>
+                    </ul>
+
+                </section>
+
+
+            </section>
+
+            <section class="contenedor2" id="lateral">
+                <div class="contenedor2__lateral">
+                </div>
+
+                <div class="music-bloq">
+                  <div class="music" onclick="play(), stop()">
+                      <div onclick="PlayAudio()" type="checkbox" class="play1" id="miPlay"> </div>
+                      <div type="checkbox" class="play2" onclick="pauseAudio()" id="miPlay2"> </div>
+                  </div>
+                </div>
+  
+                <audio id="musica1" >
+                      <source src="assets.anime/opening.mp3" type="audio/mpeg">
+                      Tu navegador no soporta la reproducción de audio.
+                </audio>
+            </section>
+
+            
+
+            
+           
+           </section>
+          
+
+        <section class="contenedor1__reproductor" id="capitulo1">                  <!--toma esta referencia anula la img con none y dale el importan al cap en css-->
+            <div class="contenedor1__reproductor-episodes">                         <!--quita el color de background del div le deje el color #111-->
+                <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca1">
+              <iframe src="https://mega.nz/embed#!9ssFyY5T!IctFBXFLfJINW-7buVGcdSjFN0XkyCczSZOBprCLaWs"
+               width="100%" height="100%" class="capi1"
+              frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" >
+              </iframe>
+            </div>
+
+            <div class="contenedor1__reproductor-redesociales">
+              <div class="contenedor1__reproductor-fechas">
+                <div class="contenedor1__reproductor-fechas-completo">
+                  Episodio 1:  Estreno 5 de julio
+                </div>
+              </div>
+            </div> 
+        </section>
+
+        <section class="contenedor1__reproductor" id="capitulo2">     
+            <div class="contenedor1__reproductor-episodes">
+                <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca2">
+                <iframe src="https://mega.nz/embed#!h9NFyQDD!m-wUR7LbhKKn3YlaNZZqiUSxTG9smIGy6N5dQzHUbts" width="100%" height="100%" class="capi2"
+                 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" >
+                </iframe>
+            </div>
+
+            <div class="contenedor1__reproductor-redesociales">
+              <div class="contenedor1__reproductor-fechas">
+                <div class="contenedor1__reproductor-fechas-completo">
+                  Episodio 2:  Estreno 12 de julio
+                </div>
+              </div>
+            </div> 
+              
+        </section>      
+        
+        <section class="contenedor1__reproductor" id="capitulo3">   
+              <div class="contenedor1__reproductor-episodes">
+                <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca3">
+                <iframe src="https://mega.nz/embed#!x9Vz0SBI!XOm20fTry7EHqb7gsI4nsAQ0xBQRvo-wgfzvz-GEEcU" width="100%" height="100%"  class="capi3"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+                </iframe>
+              </div>
+
+              <div class="contenedor1__reproductor-redesociales">
+                <div class="contenedor1__reproductor-fechas">
+                  <div class="contenedor1__reproductor-fechas-completo">
+                    Episodio 3: Estreno 19 de julio
+                  </div>
+                </div>
+              </div> 
+        </section>
+
+        <section class="contenedor1__reproductor" id="capitulo4">  
+              <div class="contenedor1__reproductor-episodes">
+                <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca4">
+                <iframe src="https://mega.nz/embed#!JtMDRCTS!rdKSIQhFjLEWMqlv1cI9OqlrlKTKkOvqiukxOhszTIw" width="100%" height="100%" class="capi4"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+                </iframe>
+              </div>
+
+              <div class="contenedor1__reproductor-redesociales">
+                <div class="contenedor1__reproductor-fechas">
+                  <div class="contenedor1__reproductor-fechas-completo">
+                    Episodio 4: Estreno 26 de julio
+                  </div>
+                </div>
+              </div> 
+        </section>
+
+        <section class="contenedor1__reproductor" id="capitulo5">  
+              <div class="contenedor1__reproductor-episodes">
+                <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca5">
+                <iframe src="https://mega.nz/embed#!llN1jCxC!AYQg6uAWzzyKawyLDfr5vsmAAKTHumjGxJbW1b_KnOM" width="100%" height="100%" class="capi5"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+                </iframe>
+              </div>
+
+              <div class="contenedor1__reproductor-redesociales">
+                <div class="contenedor1__reproductor-fechas">
+                  <div class="contenedor1__reproductor-fechas-completo">
+                    Episodio 5: Estreno 2 de agosto
+                  </div>
+                </div>
+              </div> 
+        </section>
+
+        <section class="contenedor1__reproductor" id="capitulo6">  
+              <div class="contenedor1__reproductor-episodes">
+                <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca6">
+                <iframe src="https://mega.nz/embed#!8gUDgYIa!GSK5Gu6ZitgsJh4kmI0FWUcZ5W0poJcsm10LF4rseb8" width="100%" height="100%" class="capi6"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+                </iframe>
+              </div>
+
+              <div class="contenedor1__reproductor-redesociales">
+                <div class="contenedor1__reproductor-fechas">
+                  <div class="contenedor1__reproductor-fechas-completo">
+                    Episodio 6: Estreno 9 de agosto
+                  </div>
+                </div>
+              </div> 
+        </section>
+
+        <section class="contenedor1__reproductor" id="capitulo7">  
+              <div class="contenedor1__reproductor-episodes">
+                <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca7">
+                <iframe src="https://mega.nz/embed#!YpVXAAoY!U5t0ZGHikCgBWA76NQKApbgkTs5jCpCrvy2alI9gUJE" width="100%" height="100%" class="capi7"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+                </iframe>
+              </div>
+
+              <div class="contenedor1__reproductor-redesociales">
+                <div class="contenedor1__reproductor-fechas">
+                  <div class="contenedor1__reproductor-fechas-completo">
+                    Episodio 7: Estreno 16 de agosto
+                  </div>
+                </div>
+              </div> 
+        </section>
+
+        <section class="contenedor1__reproductor" id="capitulo8">   
+              <div class="contenedor1__reproductor-episodes">
+                <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca8">
+                <iframe src="https://mega.nz/embed#!A5NngK4S!hAnZ28jAm3i_PcGA--NDR_StVpE0jEoiu8f7ySk9tJ0" width="100%" height="100%" class="capi8"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+                </iframe>
+              </div>
+
+              <div class="contenedor1__reproductor-redesociales">
+                <div class="contenedor1__reproductor-fechas">
+                  <div class="contenedor1__reproductor-fechas-completo">
+                    Episodio 8: Estreno 23 de agosto
+                  </div>
+                </div>
+              </div> 
+        </section>      
+
+        <section class="contenedor1__reproductor" id="capitulo9">  
+              <div class="contenedor1__reproductor-episodes" >
+                <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca9">
+                <iframe src="https://mega.nz/embed#!E9MhTKBJ!KxId-uL6iZaWJ7-pldhmKg3lyg2STcRi1ci_GoTHHpI" width="100%" height="100%" class="capi9"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+                </iframe>
+              </div>
+
+              <div class="contenedor1__reproductor-redesociales">
+                <div class="contenedor1__reproductor-fechas">
+                  <div class="contenedor1__reproductor-fechas-completo">
+                    Episodio 9: Estreno 30 de agosto
+                  </div>
+                </div>
+              </div>  
+        </section>
+
+        <section class="contenedor1__reproductor" id="capitulo10">  
+              <div class="contenedor1__reproductor-episodes">
+                <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca10">
+                <iframe src="https://mega.nz/embed#!JhMz3IwC!k6AzHBy4iLQPh-IoF5VffqPkFSpbc3su6WUg3oR9NUk" width="100%" height="100%" class="capi10"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+                </iframe>
+              </div>
+
+              <div class="contenedor1__reproductor-redesociales">
+                <div class="contenedor1__reproductor-fechas">
+                  <div class="contenedor1__reproductor-fechas-completo">
+                    Episodio 10: Estreno 6 de septiembre
+                  </div>
+                </div>
+              </div> 
+        </section>
+
+        <section class="contenedor1__reproductor" id="capitulo11">  
+              <div class="contenedor1__reproductor-episodes">
+                <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca11">
+                <iframe src="https://mega.nz/embed#!B8V1VAwI!L5O7w-tpOQXYW0bo303MQDQm1BN8NUErXu-P9tUlSLI" width="100%" height="100%" class="capi11"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+                </iframe>
+              </div>
+
+              <div class="contenedor1__reproductor-redesociales">
+                <div class="contenedor1__reproductor-fechas">
+                  <div class="contenedor1__reproductor-fechas-completo">
+                    Episodio 11: Estreno 13 de septiembre
+                  </div>
+                </div>
+              </div> 
+        </section>
+
+        <section class="contenedor1__reproductor" id="capitulo12">  
+              <div class="contenedor1__reproductor-episodes">
+                <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca12">
+                <iframe src="https://mega.nz/embed#!tlNTFa5C!Id7u7AdChdQiwMrwvji_LMvfhgRZvfM3lsNARjfy5Zw" width="100%" height="100%" class="capi12"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+                </iframe>
+              </div>  
+              
+              <div class="contenedor1__reproductor-redesociales">
+                <div class="contenedor1__reproductor-fechas">
+                  <div class="contenedor1__reproductor-fechas-completo">
+                    Episodio 12: Estreno 20 de septiembre
+                  </div>
+                </div>
+              </div> 
+        </section>
+
+        <section class="contenedor1__reproductor" id="capitulo13">  
+            <div class="contenedor1__reproductor-episodes">
+              <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca13">
+              <iframe src="https://mega.nz/embed#!d9chlIYS!Qz5oc0fFC_mfiMQZgdyjWwOWe666xN23TSNr78J4r44" width="100%" height="100%" class="capi13"
+              frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+              </iframe>
+            </div>  
+            
+            <div class="contenedor1__reproductor-redesociales">
+              <div class="contenedor1__reproductor-fechas">
+                <div class="contenedor1__reproductor-fechas-completo">
+                  Episodio 13: Estreno 4 de octubre de
+                </div>
+              </div>
+            </div> 
+         </section>
+ 
+         <section class="contenedor1__reproductor" id="capitulo14">  
+           <div class="contenedor1__reproductor-episodes">
+           <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca14">
+           <iframe src="https://mega.nz/embed#!FtV1hKoY!sEi0lrl-TjakKJrhOYc6lo1oz4KPlAX-jYYeAwTdHEg" width="100%" height="100%" class="capi14"
+           frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+           </iframe>
+          </div>  
+        
+          <div class="contenedor1__reproductor-redesociales">
+          <div class="contenedor1__reproductor-fechas">
+            <div class="contenedor1__reproductor-fechas-completo">
+              Episodio 14: Estreno 11 de octubre
+            </div>
+           </div>
+           </div> 
+          </section>
+
+          <section class="contenedor1__reproductor" id="capitulo15">  
+            <div class="contenedor1__reproductor-episodes">
+            <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca15">
+            <iframe src="https://mega.nz/embed#!VpcDmYra!kk8T8iJYEzma7WX_h4jhsiMbjJzx17APFLLvf6JMLR0" width="100%" height="100%" class="capi15"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+            </iframe>
+           </div>  
+         
+           <div class="contenedor1__reproductor-redesociales">
+           <div class="contenedor1__reproductor-fechas">
+             <div class="contenedor1__reproductor-fechas-completo">
+               Episodio 15: Estreno 18 de octubre 
+             </div>
+            </div>
+            </div> 
+          </section>
+
+
+          <section class="contenedor1__reproductor" id="capitulo16">  
+            <div class="contenedor1__reproductor-episodes">
+            <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca16">
+            <iframe src="https://mega.nz/embed#!lxdBDCwI!29gtshtElEXdjaaFfAXbPZ2nZo0yf8lFCj2hBZJd0cc" width="100%" height="100%" class="capi16"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+            </iframe>
+           </div>  
+         
+           <div class="contenedor1__reproductor-redesociales">
+           <div class="contenedor1__reproductor-fechas">
+             <div class="contenedor1__reproductor-fechas-completo">
+               Episodio 16: Estreno 25 de octubre
+             </div>
+            </div>
+            </div> 
+          </section>
+
+          <section class="contenedor1__reproductor" id="capitulo17">  
+            <div class="contenedor1__reproductor-episodes">
+            <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca17">
+            <iframe src="https://mega.nz/embed#!t9cnxYKa!sKeZwnvKtIoUybS2mdSSDNuFOMCnWa_P9C8hCsa_qOY" width="100%" height="100%" class="capi17"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+            </iframe>
+           </div>  
+         
+           <div class="contenedor1__reproductor-redesociales">
+           <div class="contenedor1__reproductor-fechas">
+             <div class="contenedor1__reproductor-fechas-completo">
+               Episodio 17: Estreno 1 de noviembre
+             </div>
+            </div>
+            </div> 
+          </section>
+
+          <section class="contenedor1__reproductor" id="capitulo18">  
+            <div class="contenedor1__reproductor-episodes">
+            <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca18">
+            <iframe src="https://mega.nz/embed#!k5dTWAYI!-SHZyPj60lBsX3yroJ2oXGIvcuKAYvH9-fVjUphft4I" width="100%" height="100%" class="capi18"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+            </iframe>
+           </div>  
+         
+           <div class="contenedor1__reproductor-redesociales">
+           <div class="contenedor1__reproductor-fechas">
+             <div class="contenedor1__reproductor-fechas-completo">
+               Episodio 18: Estreno 8 de noviembre
+             </div>
+            </div>
+            </div> 
+          </section>
+
+          <section class="contenedor1__reproductor" id="capitulo19">  
+            <div class="contenedor1__reproductor-episodes">
+            <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca19">
+            <iframe src="https://mega.nz/embed#!ghMDkK6a!AndZcSKk7mCWbpIg7lv4yOAVPAX9sHxCzTMZJMZTyQ4" width="100%" height="100%" class="capi19"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+            </iframe>
+           </div>  
+         
+           <div class="contenedor1__reproductor-redesociales">
+           <div class="contenedor1__reproductor-fechas">
+             <div class="contenedor1__reproductor-fechas-completo">
+               Episodio 19: Estreno 15 de noviembre
+             </div>
+            </div>
+            </div> 
+          </section>
+
+          <section class="contenedor1__reproductor" id="capitulo20">  
+            <div class="contenedor1__reproductor-episodes">
+            <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca20">
+            <iframe src="https://mega.nz/embed#!YsUhGAjS!Ui19lk9yAzV-foIq8Gc8cSnmv4nSOeJ1mjQvOTx8AZU" width="100%" height="100%" class="capi20"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+            </iframe>
+           </div>  
+         
+           <div class="contenedor1__reproductor-redesociales">
+           <div class="contenedor1__reproductor-fechas">
+             <div class="contenedor1__reproductor-fechas-completo">
+               Episodio 20: Estreno 22 de noviembre
+             </div>
+            </div>
+            </div> 
+          </section>
+
+          <section class="contenedor1__reproductor" id="capitulo21">  
+            <div class="contenedor1__reproductor-episodes">
+            <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca21">
+            <iframe src="https://mega.nz/embed#!Q0MHhCRC!ohrdHPYQIR-aC9-B3jBFD6sBTQ5fd18k2qVqjglJGVI" width="100%" height="100%" class="capi21"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+            </iframe>
+           </div>  
+         
+           <div class="contenedor1__reproductor-redesociales">
+           <div class="contenedor1__reproductor-fechas">
+             <div class="contenedor1__reproductor-fechas-completo">
+               Episodio 21: Estreno 29 de noviembre
+             </div>
+            </div>
+            </div> 
+          </section>
+
+          <section class="contenedor1__reproductor" id="capitulo22">  
+            <div class="contenedor1__reproductor-episodes">
+            <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca22">
+            <iframe src="https://mega.nz/embed#!80Nh2K6L!dl-zmCIAwnldfs0S2OBMhhk7FPaMhe0RQmxgjCg5UYU" width="100%" height="100%" class="capi22"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+            </iframe>
+           </div>  
+         
+           <div class="contenedor1__reproductor-redesociales">
+           <div class="contenedor1__reproductor-fechas">
+             <div class="contenedor1__reproductor-fechas-completo">
+               Episodio 22: Estreno 6 de diciembre 
+             </div>
+            </div>
+            </div> 
+          </section>
+
+          <section class="contenedor1__reproductor" id="capitulo23">  
+            <div class="contenedor1__reproductor-episodes">
+            <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca23">
+            <iframe src="https://mega.nz/embed#!CYxQWY7Q!OlpYVzZ8q6LL9J-CiId9xLOcXdMFMqYA2YFXmk1PfMk" width="100%" height="100%" class="capi23"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+            </iframe>
+           </div>  
+         
+           <div class="contenedor1__reproductor-redesociales">
+           <div class="contenedor1__reproductor-fechas">
+             <div class="contenedor1__reproductor-fechas-completo">
+               Episodio 23: Estreno 13 de diciembre
+             </div>
+            </div>
+            </div> 
+          </section>
+
+          <section class="contenedor1__reproductor" id="capitulo24">  
+            <div class="contenedor1__reproductor-episodes">
+            <img src="assets.anime/proximo.png" alt="cartelera" class="cartelera ca24">
+            <iframe src="https://mega.nz/embed#!9sEVDAAS!pGq7754st1iYKlowfORTeCR4r3WbP1RlfHQHDkqj_nQ" width="100%" height="100%" class="capi24"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="">
+            </iframe>
+           </div>  
+         
+           <div class="contenedor1__reproductor-redesociales">
+           <div class="contenedor1__reproductor-fechas">
+             <div class="contenedor1__reproductor-fechas-completo">
+               Episodio 24: Estreno 20 de diciembre
+             </div>
+            </div>
+            </div> 
+          </section>
+
+        </main>
+
+        <footer id="footers" class="footer">
+          <div class="footer__creditos">
+            GTPananime, Inc. © 2023. Todos los derechos reservados.
+          </div>
+        </footer>
+
+
+    </body>
+</html>

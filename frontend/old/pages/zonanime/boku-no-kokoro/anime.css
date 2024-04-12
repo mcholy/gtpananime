@@ -1,0 +1,113 @@
+/*activar un assets de carpeta y poner lo archivos para esto*/
+
+.active_background{
+    background-image: url('assets.anime/background.jpg')
+}   
+    
+/*buton noche*/
+.active2{
+    background-image: url('../../../assets/botones/NOCHE6-.png');
+}
+    
+/*buton noche movil*/
+@media only screen and (max-width:700px){
+       .active2{
+           background-image: url('../../../assets/botones/NOCHE6-.png');
+        }
+}
+    
+    
+/*modificacion del gif de pc que para siempre a la derecha*/
+.contenedor2{
+      background-image: url('assets.anime/contenedor2PC.gif');
+}
+    
+/*modificacion del mismo gil pero en movil*/
+ @media only screen and (max-width:950px){
+      .contenedor2{
+        background-image: url('assets.anime/contenedor2Movil.gif');
+      }
+}
+
+
+.ca1{
+    display: none;
+}
+.ca2{
+    display: none;
+}
+.ca3{
+    display: none;
+}
+.ca4{
+    display: none;
+}
+.ca5{
+    display: none;
+}
+.ca6{
+    display: none;
+}
+.ca7{
+    display: none;
+}
+.ca8{
+    display: none;
+}
+.ca9{
+    display: none;
+}
+.ca10{
+    display: none;
+}
+.ca11{
+    display: none;
+}
+.ca12{
+    display: none;
+}
+.ca13{
+    display: none;
+}
+
+
+
+.capi1{
+    display: flex!important;
+}
+.capi2{
+    display: flex!important;
+}
+.capi3{
+    display: flex!important;
+}
+.capi4{
+    display: flex!important;
+}
+.capi5{
+    display: flex!important;
+}
+.capi6{
+    display: flex!important;
+}
+.capi7{
+    display: flex!important;
+}
+.capi8{
+    display: flex!important;
+}
+.capi9{
+    display: flex!important;
+}
+.capi10{
+    display: flex!important;
+}
+.capi11{
+    display: flex!important;
+}
+.capi12{
+    display: flex!important;
+}
+.capi13{
+    display: flex!important;
+}

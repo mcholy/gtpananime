@@ -1,0 +1,1512 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+
+body{
+overflow-y: scroll;
+overflow-x: hidden;
+background-color: #050005ff;/*remove*/
+/*background-image: url(''); /*remove*/
+width: 100vw;
+background-size: cover;/*remove*/
+background-attachment: fixed; /*remove*/
+transition: all 1.5s;
+
+}
+
+
+body::-webkit-scrollbar {
+width: 0; /* Ancho de la barra de desplazamiento */
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: transparent; /* Fondo transparente para la barra de desplazamiento */
+border: none; /* Sin borde */
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Kanit:ital,wght@0,100;0,200;1,300&family=Lobster&family=Martian+Mono:wght@800&family=Skranji:wght@400;700&display=swap'); */
+
+@font-face {
+    font-family: 'title-p';
+    src: url(../../Fonts/Japonesa.ttf);
+}
+
+@font-face {
+    font-family: 'category';
+    src: url(../../Fonts/kitchen/Kitchen\ Counter.ttf);
+}
+
+@font-face {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    src: url('../../Fonts/apple/SF-Pro.dmg');
+}
+
+/*@font-face {
+    font-family: 'text-p';
+    src: url(../../Fonts/monospace/nk57-monospace-cd-lt.otf);
+}*/
+
+@font-face {
+    font-family: 'sub-p';
+    src: url(../../Fonts/mono-2/Monopoly\ Regular.ttf);
+}
+
+@font-face {
+    font-family: 'text-p';
+    src: url(../../Fonts/arial-narrow/arial_narrow_7.ttf);
+}
+
+
+
+header{
+    background: #881188;
+}
+
+.headers {
+    background: transparent;
+    display: flex;
+    height: 4em;
+    width: 100vw;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    width: 100%;
+    background: transparent;
+    align-items: center;
+    height: 4em;
+}
+.header__nav-ul {
+    display: inline-block;
+    background: transparent;
+    margin-left: auto;
+    
+}
+
+.header__nav-li {
+    display:  inline-block;
+    margin: 0 1em;
+    color: transparent;
+    background: transparent;
+
+}
+
+.header__nav-li a {
+    text-decoration: none;
+    font-family: 'title-p';
+    font-size: 1.14em;
+    color: #fff;
+    background: transparent;
+    outline: 2px solid #881188;
+    outline-offset: 5px;
+    border-radius: 2px;
+
+
+}
+
+@keyframes giraBorde {
+    0% {
+        outline-color: #881188;
+    }
+    20% {
+        outline-color: #aaa;
+    }
+    40%{
+        outline-color: #881188;
+    }
+    60%{
+        outline-color: #aaa;
+    }
+    80%{
+        outline-color: #881188;
+    }
+    93%{
+        outline-color: #aaa;
+    }
+}
+
+
+.header__nav-li a:hover {
+    color: #aaa!important;
+    animation: giraBorde 5s ease infinite;
+}
+
+.header__nav-li i {
+    background: transparent;
+    margin: 0 0.5em;
+    font-size: 0.9em;
+}
+
+.color{
+    color: #Ffa2FF !important;
+}
+
+.fa-beat{
+    animation: fa-beat 0.8s 3 !important;
+}
+.fa-bounce{
+    animation: fa-bounce 0.8s 3 !important;
+}
+
+a img.logo-anime {
+    width: 8em;
+    height: auto;
+    display: inline-block;
+    background: transparent;
+    margin-right: auto;
+    margin-left: 0.3em;
+}
+
+.header2 {
+    display: none;
+}
+/*header acabado*/
+
+
+
+/*comienzo de las imagenes ruleta*/
+.rotacion{
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    background-color: #000;
+    z-index: 2;
+}
+
+.rotacion-image {
+    display: flex;
+    transition: transform 0.4s ease;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.rotacion-image  .rotacion-images{
+    width: 100vw;
+    flex-shrink: 0;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-direction: column;
+}
+
+.rotacion-image1{
+    width: 100vw;
+    flex-shrink: 0;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-direction: column;
+}
+
+
+.rotacion-images{
+    width: 600px;
+    height: 400px;
+}
+
+
+@media only screen and (max-width:670px){
+    .rotacion-images a .img-poster{
+        height: 100%;
+        width: 100%;
+    }
+    .poster{
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+     }
+}
+
+/*bloques de las imagenes de carrusel responsive*/
+@media only screen and (min-width:670px) and (max-width:1400px){
+    .rotacion-images a .img-poster{
+        height: 100%;
+        width: 600px;
+        background-size: cover;
+        transition: all 1.5s;      
+    }
+    .poster{
+        height: 100%;
+        width: 600px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+     }
+}
+
+@media only screen and (min-width:1400px) and (max-width:2755px){
+    .rotacion-images a .img-poster{
+        height: 100%;
+        width: 800px;
+        background-size: cover;
+        transition: all 1.5s;      
+    }
+    .poster{
+        height: 100%;
+        width: 800px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+     }
+}
+
+@media only screen and (max-width:670px) {
+    .rotacion-images a .img-poster{
+        height: 100%;
+        background-size: cover;
+        transition: all 1.5s;      
+    }
+    .img-title{
+        font-size: 0.6em;
+    }
+    #prevBtn{
+        border: none!important;
+    }
+    #nextBtn{
+        border: none!important;
+    }
+}
+/*final de los bloques de las imagenes de carrusel responsive*/
+
+/*imagenes de la ruleta*/
+.img1{
+    background-image: url('../../assets/escuadron.webp'); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img2{
+    background-image: url('../../assets/fivenightsfreddy.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img3{
+    background-image: url('../../assets/image-rotation/Protocol-Rain.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img4{
+    background-image: url('../../assets/image-rotation/Frieren-Beyond-Journey.webp'); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img5{
+    background-image: url('../../assets/tatenoyusha.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img6{
+    background-image: url('../../assets/image-rotation/tenjiku.jpeg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img7{
+    background-image: url('../../assets/image-rotation/kanokano2-poster.webp'); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*final de las imagenes de la ruleta*/
+
+
+
+.img-title{
+    height: 10%;
+    color: #fff;
+    font-family: 'sub-p' ;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s;
+}
+
+#prevBtn:hover, #nextBtn:hover {
+    background: #a3a;
+    color: #fff; 
+    border: none;
+}
+
+#prevBtn {
+    left: 10px;
+    display: flex;
+    width: 4em;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: monospace;
+    border: 2px solid #aaa;
+}
+
+#nextBtn {
+    right: 10px;
+    display: flex;
+    width: 4em;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: monospace;
+    border: 2px solid #aaa;
+}
+
+
+
+/*final de la rotacion de las imagenes*/
+
+/*etiquetas*/
+.etiquetas{
+    width: 100vw;
+    height: auto;
+    margin-top: 3em;
+}
+
+.etiquetas_list{
+    transform: scale(0);
+    z-index: 0;
+    gap: 1.5em 2em;
+    height: 0em;
+    transition: 700ms ease-in-out;
+}
+.act_style{
+    transform: scale(1);
+    margin-top: 1em;
+    gap: 1.5em 2em;
+    z-index: 1;
+    height: auto;
+    margin-bottom: 1.5em;
+    transition: all 700ms ease-in-out;
+}
+
+
+@media only screen and (min-width:200px) and (max-width:350px){
+    .etiquetas_list{
+        width: 99%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 2em;
+    }
+    
+}
+
+@media only screen and (min-width:350px) and (max-width:750px){
+    .etiquetas_list{
+        width: 98%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 2em;
+    }
+}
+
+@media only screen and (min-width:00px) and (max-width:900px){
+    .category_item{
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (min-width:750px) and (max-width:1529px){
+    .etiquetas_list{
+        width: 98%;
+        display: grid;
+        grid-template-columns: repeat(6 , 1fr);
+        grid-auto-rows: 2em;
+    }
+    
+}
+
+@media only screen and (min-width:1529px) and (max-width:4000px){
+    .etiquetas_list{
+        width: 98%;
+        display: grid;
+        grid-template-columns:minmax(9em,1fr) repeat(11 , 1fr);
+        grid-auto-rows: 2em;
+    }
+    
+}
+
+/*botones de categorias*/
+.etiquetas-centrado{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.etiquetas-buscadores{
+    width: 98%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    z-index: 2;
+}
+
+.act_centrar{
+    justify-content: center;
+}
+
+#buscadores{
+    border: none;
+    background-color: #000;
+    outline: 3px solid #881188;
+    animation: giraBorde 5s ease infinite;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+    font-family: 'text-p';
+    transition: all 700ms;
+    
+}
+@media only screen and (min-width:500px){
+    .act_buscador{
+        transform: scale(0);
+        transition: all 700ms;
+        width: 0px!important ;
+        
+    }
+    
+}
+
+
+::placeholder {
+    color: #bbb;
+    text-align: center;
+    font-family: 'title-p';
+    font-size: 1.6em;
+
+}
+
+.etiquetas-buscadores input:focus {
+    background: #aaa;
+    color: #ffffff;
+    
+}
+
+@media only screen and (min-width:500px) and (max-width:659px){
+    #buscadores{
+        width: 20em;
+    }
+}
+
+@media only screen and (min-width:000px) and (max-width:500px){
+    .etiquetas-buscadores{
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    .etiquetas__button{
+        order: 2;
+        margin-top: 1.5em;
+    }
+    #buscadores{
+        height: 2.5em;
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width:660px){
+    #buscadores{
+        width: 30em;
+    }
+}
+
+.etiquetas__button{
+    background: transparent;
+    border: none;
+    background-color: #882288;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    width: 12em;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.etiquetas__img-foros{
+    width: auto;
+    height: 2.5em;
+    color: #fff;
+}
+
+.etiquetas__img-text{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'category';
+    font-size: 1.1em;
+    margin-top: 0.4em;
+    height: auto;
+}
+
+.etiquetas__img-flecha{
+    width: auto;
+    height: 3em;
+    transform: rotate(-90deg);
+    transition: all 800ms ease-in-out;
+}
+
+.arrow{
+    transform: rotate(0deg)!important;
+    transition: all 800ms ease-in-out;
+    
+}
+/*final de las categorias botones de categorias*/
+
+.category_item{
+    display: flex;
+   text-decoration: none;
+   color: #fff;
+   outline: 3px solid #881188 ;
+   outline-offset: -0.1em;
+   border-radius: 45px;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   animation:giraBorde 5s ease infinite;
+   font-family: 'category';
+   margin-top: 0.4em;
+   height: 2.5em;
+}
+
+.category_item:hover{
+   background-color: #881188;
+   transition: all 800ms;
+   animation: none;
+}
+/*final de las etiquetas*/
+
+
+/*main*/
+.container{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 3fr 0.5fr;
+}
+
+
+.container1 {
+    padding: 10px;
+    background: #666;
+}
+
+.anime {
+    display: grid;
+    padding:  0 6px;
+}
+
+.container2 {
+    padding: 10px;
+}
+.Titulo {
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    height: 56px;
+    align-items: center;
+    margin-top: -10px;
+}
+
+#tendencia {
+    color: #fff;
+    font-family: 'category';
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    height: 56px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 2s;
+    
+
+}
+
+.Titulo:hover >  #tendencia{
+    font-size: 2em;
+    font-family: 'category';
+    color: #666;
+    transform: rotateY(360deg);
+    
+}
+
+.anime-li {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+.anime-link {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+}
+
+.anime-ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 12em;
+    grid-gap: 10px;
+    overflow: hidden;
+    margin-top: 0.5em;
+}
+
+.anime-li:hover .anime-li-image {
+    transform: scale(1.3);
+}
+
+.anime-li .anime-li-image {
+    width: 100%;
+    height: 12em;
+    background-size: cover;
+    transition: transform 400ms ease-in-out;
+}
+
+.anime-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: bottom center;
+    transition: transform 500ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.anime-li:hover .anime-details {
+    transform: scale(1);
+}
+
+.anime-details span {
+    font-family: 'text-p' !important;
+
+    transition: all 400ms ease-in-out;
+    background: linear-gradient(to top, rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.3));
+}
+
+
+.anime-li:hover  .anime-li-day span{
+    padding-left: 0.7em;
+    transition: all 400ms ease-in-out;
+}
+
+.anime-details span i {
+    background: transparent;
+    margin-right: 0.3em;
+}
+
+.anime-li-h21 {
+    font-family: 'text-p' !important;
+    color: #fff;
+    font-weight: 200;
+    padding: 1.5px 0;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+    margin-top: auto;
+    transition: all 1.5s;
+    background: linear-gradient(to top, rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.3));
+}
+
+.anime-li:hover .anime-li-h21 {
+    color: #dfd;
+    transform: scale(1);
+}
+
+/*terminado las imagenes backgtound*/
+
+/*imagenes fondos de las noticias presentacion*/
+
+.second1{
+    background-image: url('../../assets/escuadron.webp');
+}
+
+.first{
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_kudalive-2.jpg');
+}
+
+.anime-li a div.second {
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_takagi-18.jpg');
+}
+
+.anime-li a div.second3 {
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_evangelion-156-1536x864.jpg');
+}
+
+.anime-li a div.second4 {
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_tomb-raider-2-1536x864.jpg');
+}
+
+.anime-li a div.second5 {
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/Duolingo-1536x864.jpg');
+}
+
+.anime-li a div.second6 {
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/Nobara-1536x864.jpg');
+}
+
+.anime-li a div.second7 {
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/43-1536x864.webp');
+}
+
+.anime-li a div.second8 {
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_a-1536x864.jpg');
+}
+
+.anime-li a div.second9 {
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/TenSura_coleus_PV_01_Portada-1536x864.jpg');
+}
+
+.anime-li a div.second10 {
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_nier-reincarnation-30-1536x864.jpg');
+}
+
+.anime-li a div.second11 {
+    background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_boku-no-kokoro-no-yabai-19-1536x864.jpg');
+}
+/*terminado titulo y fecha de las nuevas publicaciones*/
+
+
+/*aside*/
+
+.aside {
+    background-color: transparent;
+}
+
+.curser{
+    cursor: pointer;
+}
+
+/*adblock*/
+.news {
+    width: 98%;
+    background: transparent;
+    outline: 1.5px solid #aaa;
+    margin-top: 3.5em;
+    border-radius: 8px;
+    background-color: #111;
+    padding: 3px 0;
+    
+}
+
+.news-container {
+    display: flex;
+    flex:1;
+    background-color: transparent;
+    align-items: center;
+    padding: 3px;
+    width: 99%;
+}
+
+.fa-shield-halved {
+    color: #f0f;
+    font-size: 2.5em;
+    background: transparent;
+    margin-right: 0.2em;
+    margin-left: 0.2em;
+}
+
+.news-container-block {
+   background-color: transparent;
+}
+
+.news-container_security {
+    background-color: transparent;
+    color: #ccc;
+    font-family: 'title-p';
+    font-size: 1.3em;
+}
+
+.news-container_text {
+    background-color: transparent;
+    color: #ccc;
+    font-family: 'text-p';
+    font-size: 0.9em;
+
+}
+
+.news-container_buttons {
+    display: grid;
+    justify-items: center;
+    margin: 0.5em 0;
+    background-color: transparent;
+} 
+
+.news-container_button {
+    display: flex;
+    justify-content: center;
+    width: 10em;
+    color: #aaa;
+    padding: 0.2em 0;
+    font-size: 1.1em;
+    border: none;
+    outline: 2px solid #a4a;
+    border-radius: 10px;
+    background: #a0a;
+    font-family: 'title-p'!important;
+}
+
+.news-container_buttons:hover > .news-container_button {
+    background-color: #d0d;
+    color: #fff;
+}
+/*adblock ♠*/
+
+/*descargar app*/
+.aplicacion {
+    width: 98%;
+    background: transparent;
+    outline: 1.5px solid #aaa;
+    margin-top: 1.5em;
+    border-radius: 8px;
+    background-color: #111;
+    padding: 3px 0;
+    
+}
+
+.container-app {
+    display: flex;
+    flex:1;
+    background-color: transparent;
+    align-items: center;
+    padding: 3px;
+    width: 99%;
+}
+
+.fa-circle-down {
+    color: #f0f;
+    font-size: 2.5em;
+    background: transparent;
+    margin-right: 0.2em;
+    margin-left: 0.2em;
+}
+
+.container-app-text {
+    background-color: transparent;
+ }
+ 
+ .container-app-titulo {
+     background-color: transparent;
+     color: #ccc;
+     font-family: 'title-p'!important;
+     font-size: 1.3em;
+ }
+
+ .container-app-subtext {
+    background-color: transparent;
+    color: #ccc;
+    font-family: 'text-p';
+    font-size: 0.9em;
+
+}
+
+.aplicacion-container_buttons {
+    display: grid;
+    justify-items: center;
+    margin: 0.5em 0;
+    background-color: transparent;
+} 
+
+.aplicacion-container_button {
+    display: flex;
+    justify-content: center;
+    width: 10em;
+    color: #aaa;
+    padding: 0.2em 0;
+    font-size: 1.1em;
+    border: none;
+    outline: 2px solid #a4a;
+    border-radius: 10px;
+    background: #a0a;
+    font-family: 'title-p'!important;
+
+}
+.aplicacion-container_buttons:hover > .aplicacion-container_button {
+    background-color: #d0d;
+    color: #fff;
+}
+/*descargar app*/
+
+/*crear comunity*/
+.crearcomunity{
+    width: 98%;
+    background: transparent;
+    outline: 1.5px solid #aaa;
+    margin-top: 1.5em;
+    border-radius: 8px;
+    background-color: #111;
+    padding: 0 0 3px 0;
+    z-index: 100;
+    overflow: hidden;
+
+}
+
+.crearcomunity-img {
+    background-image: url('https://i.pinimg.com/originals/f9/f8/48/f9f848b6a9e164a865849b18e3dae29f.jpg');
+    width: 100%;
+    height: 4em;
+    bottom: 7em;
+    background-size: cover;
+
+}
+
+.crearcomunity-titulo {
+    display: flex;
+    background: transparent;
+    width: 100%;
+    align-items: center;
+}
+
+.crearcomunity-titulo_img {
+    background-color: transparent;
+    background-image: url('../../assets/asideanime.png');
+    background-size: cover;
+    position: relative;
+    width: 5em;
+    height: 6.3em;
+    margin-top: -3em;
+    display: inline-block;
+}
+
+.crearcomunity-titulo_text{
+    display: inline-block;
+    color: #ccc;
+    background-color: transparent;
+    font-family: 'title-p'!important;
+    font-size: 1.5em;
+}
+
+.crearcomunity-parrafo {
+    display: flex;
+    color: #aaa;
+    background-color: transparent;
+    font-family: 'text-p';
+    padding: 3px 12px;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    line-height: 1.3;
+
+}
+
+.crearcomunity-barra {
+    background-color: #666;
+    border: none;
+    height: 1px;
+    margin: 14px 5px;
+    overflow: hidden;
+}
+
+.crearcomunity-botones{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.crearcomunity-buttons{
+    display: grid;
+    justify-items: center;
+    margin: 1.1em 0;
+    background-color: transparent;
+    transition: all 1.5s;
+}
+
+.crear-publi{
+    font-family: 'title-p';
+}
+
+.box2{
+    margin: 0 0 0.5em 0;
+}
+
+.crearcomunity-button{
+    display: flex;
+    justify-content: center;
+    width: 11em;
+    color: #aaa;
+    padding: 0.2em 0;
+    font-size: 1.2em;
+    border: none;
+    outline: 2px solid #a4a;
+    border-radius: 10px;
+    background: #a0a;
+    font-family: 'title-p'!important;
+}
+
+.crearcomunity-buttons:hover > .crearcomunity-button {
+    background-color: #d0d;
+    color: #fff;
+}
+/*comunity terminado*/
+
+/*póliticas*/
+.users{
+    width: 98%;
+    outline: 1.5px solid #aaa;
+    margin-top: 1.5em;
+    border-radius: 8px;
+    background-color: #111;
+    padding:3px ;
+
+}
+.users-container{
+    display: flex;
+    margin-top: 0.5em;
+    width: 100%;
+    background-color: #111;
+    font-family: 'text-p';
+
+}
+
+.users_containers1{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    margin-right: 0.2em;
+    font-size: 0.9em;
+    background-color: transparent;
+    /*justify-content: space-evenly;*/
+
+
+}
+
+.users_containers2{
+    display: flex;
+    width: 48%;
+    flex-wrap: wrap;
+    background-color: transparent;
+    font-size: 0.9em;
+    /*justify-content: space-evenly;*/
+  
+   
+
+}
+
+.text2s {
+    margin-top: 0.5em;/*quitar para el responsive*/
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.usuario {
+    width: 100%; 
+}
+
+
+.users_containers1-text {
+    display: flex;
+   text-decoration: none;
+   color: #ccc;
+   cursor: pointer;
+   background-color: transparent;
+ /*  justify-content: space-evenly;*/
+}
+
+.users_containers1-text:hover {
+    color:#d0f
+}
+
+.users-barra {
+    display: block;
+    background-color: #666;
+    border: none;
+    height: 1px;
+    margin: 10px 5px;
+    overflow: hidden;
+}
+
+.users_derechos{
+    display: flex;
+    padding: 5px;
+    background-color: #111;
+    justify-content: space-evenly;
+}
+.users_derechos-text{
+    background-color: #111;
+    color: #ccc'text-p';
+    font-size: 0.8em;
+}
+
+.anouncer{
+    width: 17em;
+    height: 5em;
+    outline: 1.5px solid #aaa;
+    margin-top: 1.5em;
+    border-radius: 8px;
+    background-color: #111;
+    padding:3px ;
+}
+/*terminado politicas*/
+
+
+
+
+
+
+/*movil footer body*/
+.footer-pages-movil{
+    display: none;
+    color: #fff;
+}
+
+.list-file-page{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.lista-footer-a{
+    text-decoration: none;
+    color: #888;
+    transition: color 300ms;
+    gap: 0.2em;
+    display: flex;
+    align-items: center;
+}
+.lista-footer-a:hover{
+    line-clamp:initial;
+    color:#d0f;
+    transition: color 300ms;
+}
+
+.actives{
+    color:#d0f;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.bton-descubrir{
+    display: flex;
+    font-weight: 100;
+    font-family: 'title-p';
+    cursor: pointer;
+    
+}
+.flechas-buton{
+    height: 17px;
+    padding: 5px 0 0 0;
+    margin-left: auto;
+    height: 15px;
+    transition: all 350ms ease;
+}
+
+.list-file-movil{
+    transform: scale(0) translateY(-50px) ;
+    height: 0;
+    width: 0;
+    transition: all 350ms ease;
+    margin-left: auto;
+}
+
+/*activables del boton*/
+.active-list1{
+    padding: 10px 0 0 0;
+    transform: scale(1) translateY(0px) translateX(0px);
+    height: auto;
+    width: auto;
+    transition: all 350ms ease;
+    margin-left: 1px;
+}
+.active-list2{
+    padding: 10px 0 0 0;
+    transform: scale(1) translateY(0px) translateX(0px);
+    height: auto;
+    width: auto;
+    transition: all 350ms ease;
+    margin-left: 1px;
+}
+.active-list3{
+    padding: 10px 0 0 0;
+    transform: scale(1) translateY(0px) translateX(0px);
+    height: auto;
+    width: auto;
+    transition: all 350ms ease;
+    margin-left: 1px;
+}
+
+.active-list4{
+    padding: 10px 0 0 0;
+    transform: scale(1) translateY(0px) translateX(0px);
+    height: auto;
+    width: auto;
+    transition: all 350ms ease;
+    margin-left: 1px;
+}
+
+/*girar la flecha activable*/
+.active-flecha1{
+    transform: rotate(90deg);
+    transition: transform 350ms ease;
+}
+.active-flecha2{
+    transform: rotate(90deg);
+    transition: transform 350ms ease;
+}
+.active-flecha3{
+    transform: rotate(90deg);
+    transition: transform 350ms ease;
+}
+.active-flecha4{
+    transform: rotate(90deg);
+    transition: transform 350ms ease;
+}
+
+/*separador hr*/
+.separador{
+    margin: 17px 0;
+}
+
+
+
+
+
+
+.footer{
+    height: 1.8em;
+    display: flex;
+    background: #881188;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.footer-text{
+    color: #eee;
+    font-family: 'text-p';
+    text-align: center;
+}
+/*aside terminado*/
+
+@media only screen and (min-width:900px){
+    .aside{
+        justify-content: start;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .news{
+        width: 17em!important;
+    }
+    .crearcomunity{
+        width: 17em!important;
+    }
+    .users{
+        width: 17em!important;
+    }
+    .aplicacion{
+        width: 17em!important;
+    }
+    .container-global{
+        margin-top: 3em;
+    }
+}
+
+
+
+@media only screen and (max-width:900px) {
+    .headers {
+        display: none;
+    }
+    .header2{
+        background: transparent;
+        height: 3.8em;
+        width: 100vw;
+        display: inline-block;
+        }
+    .header__nav2{
+        background: transparent;
+        height: 3.8em;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+
+    }    
+    
+    a img.logo-anime {
+        width: 7em;
+        height: auto;
+        display: inline-block;
+        background: transparent;
+        margin-right: auto;
+        margin-left: 0.3em;
+    }
+    
+
+    .button {
+        background: transparent;
+        display: flex;
+        order: 3;
+        margin-right: 1em;
+        background: transparent;
+        margin-left: auto;
+    }
+
+    .button i{
+        font-size: 2em;
+        background: transparent;
+        color: #ddd;
+    }
+
+    .header__nav-ul2{
+        display: none;
+    }
+
+    .header__nav-ul3 {
+        display: flex  !important;
+        flex-direction: column;
+        background: #111;       
+        color: transparent;
+        position: absolute;
+        z-index: 10000;
+        margin-top: 17em;
+        transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+        padding: 10px;
+        text-align: start;
+        width: 100%;
+
+    }
+    
+    .header__nav-li2 {
+        background: transparent;
+        color: transparent;
+        line-height: 2.2;
+        font-size: 1.1em;
+       
+    }
+    .header__nav-li2 a {
+        background: transparent;
+        color: #ccc;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-family: 'title-p' ;
+        margin-right: 1.3em;
+        line-height: 1.5;
+    }
+
+    .header__nav-li2 a:hover{
+        color: #c0c;
+    } 
+    .header__nav-li2 a i {
+        background: transparent;
+        margin: 0 0.5em;
+    }
+
+
+    .container {
+        grid-template-columns:  none
+    }
+    
+    .container1{
+        display: grid;
+        width: 1fr;
+        background-color: transparent;
+    }
+
+    .container-global{
+        margin-top: 3em;
+    }
+
+    .anime-ul {     
+        grid-auto-rows: 14rem;
+    }
+    
+    .anime-li a div.anime-li-image {
+    
+        /* background-image: url('https://somoskudasai.com/wp-content/uploads/2023/09/portada_kudalive-2.jpg'); */
+         width: 100%;
+         height: 14em;
+         background-size: cover;
+         transition: all 1.5s;
+     }
+
+     .aside{
+        background: transparent;
+        display: none;/*cambiar a diplay flex si no funca*/
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+     }
+
+     .users{
+        padding: 3px 10px;
+     }
+
+     .users_containers1{
+        justify-content: space-evenly;
+     }
+     .users_containers2{
+        justify-content: space-evenly;
+     }
+
+     .users_containers1-text{
+        justify-content: space-evenly;
+     }
+
+     .news-container {
+        display: flex;
+        flex:1;
+        background-color: transparent;
+        align-items: center;
+        padding: 3px;
+        width: 100%;
+        justify-content: start;
+        margin-left: 5%;
+    }
+
+    .news{
+        margin-top: 1em;
+    }
+
+    .aplicacion{
+        display: none;
+    }
+
+    .anouncer{
+        width: 98%;
+    }
+
+    .footer-pages-movil{
+        display: flex;
+        flex-direction: column;
+        margin:  0 10px 10px 10px;
+    }
+
+    .footer{
+        height: auto;
+        padding: 5px 0;
+        margin-top: 0.5em;
+    }
+
+}
